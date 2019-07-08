@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DAS>
+	<mode>LOGFILEUPLOAD</mode>
+	<name>LBNL 50A Aquisuite</name>
+	<serial>001EC60021ED</serial>
+	<devices>
+		<device>
+			<name>Internal I/O</name>
+			<address>250</address>
+			<type>Obvius, A8812, Internal I/O</type>
+			<class>27</class>
+			<numpoints>42</numpoints>
+			<records>
+				<record>
+					<time zone="UTC">2019-06-17 02:55:00</time>
+					<error text="Ok">0</error>
+					<point number="0" name="Pulse_1" units="" value="192.000" />
+					<point number="1" name="Pulse_1 Ave Rate" units="per hour" value="0" />
+					<point number="2" name="Pulse_1 Instantaneous" units="per hour" value="NULL" />
+					<point number="3" name="Pulse_1 Min" units="per hour" value="NULL" />
+					<point number="4" name="Pulse_1 Max" units="per hour" value="NULL" />
+					<point number="5" name="Pulse_2" units="" value="1.000" />
+					<point number="6" name="Pulse_2 Ave Rate" units="per hour" value="0" />
+					<point number="7" name="Pulse_2 Instantaneous" units="per hour" value="NULL" />
+					<point number="8" name="Pulse_2 Min" units="per hour" value="NULL" />
+					<point number="9" name="Pulse_2 Max" units="per hour" value="NULL" />
+					<point number="10" name="Pulse_3" units="" value="1.000" />
+					<point number="11" name="Pulse_3 Ave Rate" units="per hour" value="0" />
+					<point number="12" name="Pulse_3 Instantaneous" units="per hour" value="NULL" />
+					<point number="13" name="Pulse_3 Min" units="per hour" value="NULL" />
+					<point number="14" name="Pulse_3 Max" units="per hour" value="NULL" />
+					<point number="15" name="Pulse_4" units="" value="1.000" />
+					<point number="16" name="Pulse_4 Ave Rate" units="per hour" value="0" />
+					<point number="17" name="Pulse_4 Instantaneous" units="per hour" value="NULL" />
+					<point number="18" name="Pulse_4 Min" units="per hour" value="NULL" />
+					<point number="19" name="Pulse_4 Max" units="per hour" value="NULL" />
+					<point number="20" name="Pulse_5" units="" value="1.000" />
+					<point number="21" name="Pulse_5 Ave Rate" units="per hour" value="0" />
+					<point number="22" name="Pulse_5 Instantaneous" units="per hour" value="NULL" />
+					<point number="23" name="Pulse_5 Min" units="per hour" value="NULL" />
+					<point number="24" name="Pulse_5 Max" units="per hour" value="NULL" />
+					<point number="25" name="Pulse_6" units="" value="1.000" />
+					<point number="26" name="Pulse_6 Ave Rate" units="per hour" value="0" />
+					<point number="27" name="Pulse_6 Instantaneous" units="per hour" value="NULL" />
+					<point number="28" name="Pulse_6 Min" units="per hour" value="NULL" />
+					<point number="29" name="Pulse_6 Max" units="per hour" value="NULL" />
+					<point number="30" name="Pulse_7" units="" value="4.043" />
+					<point number="31" name="Pulse_7 Ave" units="" value="4.043" />
+					<point number="32" name="Pulse_7 Min" units="" value="4.043" />
+					<point number="33" name="Pulse_7 Max" units="" value="4.043" />
+					<point number="34" name="-" units="" value="NULL" />
+					<point number="35" name="Pulse_8" units="" value="171.000" />
+					<point number="36" name="Pulse_8 Ave Rate" units="per hour" value="0" />
+					<point number="37" name="Pulse_8 Instantaneous" units="per hour" value="NULL" />
+					<point number="38" name="Pulse_8 Min" units="per hour" value="NULL" />
+					<point number="39" name="Pulse_8 Max" units="per hour" value="NULL" />
+					<point number="40" name="Output 01" units="" value="0" />
+					<point number="41" name="Output 02" units="" value="0" />
+				</record>
+				<record>
+					<time zone="UTC">2019-06-17 03:00:00</time>
+					<error text="Ok">0</error>
+					<point number="0" name="Pulse_1" units="" value="192.000" />
+					<point number="1" name="Pulse_1 Ave Rate" units="per hour" value="0" />
+					<point number="2" name="Pulse_1 Instantaneous" units="per hour" value="NULL" />
+					<point number="3" name="Pulse_1 Min" units="per hour" value="NULL" />
+					<point number="4" name="Pulse_1 Max" units="per hour" value="NULL" />
+					<point number="5" name="Pulse_2" units="" value="1.000" />
+					<point number="6" name="Pulse_2 Ave Rate" units="per hour" value="0" />
+					<point number="7" name="Pulse_2 Instantaneous" units="per hour" value="NULL" />
+					<point number="8" name="Pulse_2 Min" units="per hour" value="NULL" />
+					<point number="9" name="Pulse_2 Max" units="per hour" value="NULL" />
+					<point number="10" name="Pulse_3" units="" value="1.000" />
+					<point number="11" name="Pulse_3 Ave Rate" units="per hour" value="0" />
+					<point number="12" name="Pulse_3 Instantaneous" units="per hour" value="NULL" />
+					<point number="13" name="Pulse_3 Min" units="per hour" value="NULL" />
+					<point number="14" name="Pulse_3 Max" units="per hour" value="NULL" />
+					<point number="15" name="Pulse_4" units="" value="1.000" />
+					<point number="16" name="Pulse_4 Ave Rate" units="per hour" value="0" />
+					<point number="17" name="Pulse_4 Instantaneous" units="per hour" value="NULL" />
+					<point number="18" name="Pulse_4 Min" units="per hour" value="NULL" />
+					<point number="19" name="Pulse_4 Max" units="per hour" value="NULL" />
+					<point number="20" name="Pulse_5" units="" value="1.000" />
+					<point number="21" name="Pulse_5 Ave Rate" units="per hour" value="0" />
+					<point number="22" name="Pulse_5 Instantaneous" units="per hour" value="NULL" />
+					<point number="23" name="Pulse_5 Min" units="per hour" value="NULL" />
+					<point number="24" name="Pulse_5 Max" units="per hour" value="NULL" />
+					<point number="25" name="Pulse_6" units="" value="1.000" />
+					<point number="26" name="Pulse_6 Ave Rate" units="per hour" value="0" />
+					<point number="27" name="Pulse_6 Instantaneous" units="per hour" value="NULL" />
+					<point number="28" name="Pulse_6 Min" units="per hour" value="NULL" />
+					<point number="29" name="Pulse_6 Max" units="per hour" value="NULL" />
+					<point number="30" name="Pulse_7" units="" value="4.043" />
+					<point number="31" name="Pulse_7 Ave" units="" value="4.043" />
+					<point number="32" name="Pulse_7 Min" units="" value="4.043" />
+					<point number="33" name="Pulse_7 Max" units="" value="4.043" />
+					<point number="34" name="-" units="" value="NULL" />
+					<point number="35" name="Pulse_8" units="" value="171.000" />
+					<point number="36" name="Pulse_8 Ave Rate" units="per hour" value="0" />
+					<point number="37" name="Pulse_8 Instantaneous" units="per hour" value="NULL" />
+					<point number="38" name="Pulse_8 Min" units="per hour" value="NULL" />
+					<point number="39" name="Pulse_8 Max" units="per hour" value="NULL" />
+					<point number="40" name="Output 01" units="" value="0" />
+					<point number="41" name="Output 02" units="" value="0" />
+				</record>
+				<record>
+					<time zone="UTC">2019-06-17 03:05:00</time>
+					<error text="Ok">0</error>
+					<point number="0" name="Pulse_1" units="" value="192.000" />
+					<point number="1" name="Pulse_1 Ave Rate" units="per hour" value="0" />
+					<point number="2" name="Pulse_1 Instantaneous" units="per hour" value="NULL" />
+					<point number="3" name="Pulse_1 Min" units="per hour" value="NULL" />
+					<point number="4" name="Pulse_1 Max" units="per hour" value="NULL" />
+					<point number="5" name="Pulse_2" units="" value="1.000" />
+					<point number="6" name="Pulse_2 Ave Rate" units="per hour" value="0" />
+					<point number="7" name="Pulse_2 Instantaneous" units="per hour" value="NULL" />
+					<point number="8" name="Pulse_2 Min" units="per hour" value="NULL" />
+					<point number="9" name="Pulse_2 Max" units="per hour" value="NULL" />
+					<point number="10" name="Pulse_3" units="" value="1.000" />
+					<point number="11" name="Pulse_3 Ave Rate" units="per hour" value="0" />
+					<point number="12" name="Pulse_3 Instantaneous" units="per hour" value="NULL" />
+					<point number="13" name="Pulse_3 Min" units="per hour" value="NULL" />
+					<point number="14" name="Pulse_3 Max" units="per hour" value="NULL" />
+					<point number="15" name="Pulse_4" units="" value="1.000" />
+					<point number="16" name="Pulse_4 Ave Rate" units="per hour" value="0" />
+					<point number="17" name="Pulse_4 Instantaneous" units="per hour" value="NULL" />
+					<point number="18" name="Pulse_4 Min" units="per hour" value="NULL" />
+					<point number="19" name="Pulse_4 Max" units="per hour" value="NULL" />
+					<point number="20" name="Pulse_5" units="" value="1.000" />
+					<point number="21" name="Pulse_5 Ave Rate" units="per hour" value="0" />
+					<point number="22" name="Pulse_5 Instantaneous" units="per hour" value="NULL" />
+					<point number="23" name="Pulse_5 Min" units="per hour" value="NULL" />
+					<point number="24" name="Pulse_5 Max" units="per hour" value="NULL" />
+					<point number="25" name="Pulse_6" units="" value="1.000" />
+					<point number="26" name="Pulse_6 Ave Rate" units="per hour" value="0" />
+					<point number="27" name="Pulse_6 Instantaneous" units="per hour" value="NULL" />
+					<point number="28" name="Pulse_6 Min" units="per hour" value="NULL" />
+					<point number="29" name="Pulse_6 Max" units="per hour" value="NULL" />
+					<point number="30" name="Pulse_7" units="" value="4.043" />
+					<point number="31" name="Pulse_7 Ave" units="" value="4.043" />
+					<point number="32" name="Pulse_7 Min" units="" value="4.043" />
+					<point number="33" name="Pulse_7 Max" units="" value="4.043" />
+					<point number="34" name="-" units="" value="NULL" />
+					<point number="35" name="Pulse_8" units="" value="171.000" />
+					<point number="36" name="Pulse_8 Ave Rate" units="per hour" value="0" />
+					<point number="37" name="Pulse_8 Instantaneous" units="per hour" value="NULL" />
+					<point number="38" name="Pulse_8 Min" units="per hour" value="NULL" />
+					<point number="39" name="Pulse_8 Max" units="per hour" value="NULL" />
+					<point number="40" name="Output 01" units="" value="0" />
+					<point number="41" name="Output 02" units="" value="0" />
+				</record>
+				<record>
+					<time zone="UTC">2019-06-17 03:10:00</time>
+					<error text="Ok">0</error>
+					<point number="0" name="Pulse_1" units="" value="243.000" />
+					<point number="1" name="Pulse_1 Ave Rate" units="per hour" value="612.000" />
+					<point number="2" name="Pulse_1 Instantaneous" units="per hour" value="17999.998" />
+					<point number="3" name="Pulse_1 Min" units="per hour" value="2571.429" />
+					<point number="4" name="Pulse_1 Max" units="per hour" value="17999.998" />
+					<point number="5" name="Pulse_2" units="" value="1.000" />
+					<point number="6" name="Pulse_2 Ave Rate" units="per hour" value="0" />
+					<point number="7" name="Pulse_2 Instantaneous" units="per hour" value="NULL" />
+					<point number="8" name="Pulse_2 Min" units="per hour" value="NULL" />
+					<point number="9" name="Pulse_2 Max" units="per hour" value="NULL" />
+					<point number="10" name="Pulse_3" units="" value="1.000" />
+					<point number="11" name="Pulse_3 Ave Rate" units="per hour" value="0" />
+					<point number="12" name="Pulse_3 Instantaneous" units="per hour" value="NULL" />
+					<point number="13" name="Pulse_3 Min" units="per hour" value="NULL" />
+					<point number="14" name="Pulse_3 Max" units="per hour" value="NULL" />
+					<point number="15" name="Pulse_4" units="" value="1.000" />
+					<point number="16" name="Pulse_4 Ave Rate" units="per hour" value="0" />
+					<point number="17" name="Pulse_4 Instantaneous" units="per hour" value="NULL" />
+					<point number="18" name="Pulse_4 Min" units="per hour" value="NULL" />
+					<point number="19" name="Pulse_4 Max" units="per hour" value="NULL" />
+					<point number="20" name="Pulse_5" units="" value="1.000" />
+					<point number="21" name="Pulse_5 Ave Rate" units="per hour" value="0" />
+					<point number="22" name="Pulse_5 Instantaneous" units="per hour" value="NULL" />
+					<point number="23" name="Pulse_5 Min" units="per hour" value="NULL" />
+					<point number="24" name="Pulse_5 Max" units="per hour" value="NULL" />
+					<point number="25" name="Pulse_6" units="" value="1.000" />
+					<point number="26" name="Pulse_6 Ave Rate" units="per hour" value="0" />
+					<point number="27" name="Pulse_6 Instantaneous" units="per hour" value="NULL" />
+					<point number="28" name="Pulse_6 Min" units="per hour" value="NULL" />
+					<point number="29" name="Pulse_6 Max" units="per hour" value="NULL" />
+					<point number="30" name="Pulse_7" units="" value="4.043" />
+					<point number="31" name="Pulse_7 Ave" units="" value="4.043" />
+					<point number="32" name="Pulse_7 Min" units="" value="4.043" />
+					<point number="33" name="Pulse_7 Max" units="" value="4.043" />
+					<point number="34" name="-" units="" value="NULL" />
+					<point number="35" name="Pulse_8" units="" value="171.000" />
+					<point number="36" name="Pulse_8 Ave Rate" units="per hour" value="0" />
+					<point number="37" name="Pulse_8 Instantaneous" units="per hour" value="NULL" />
+					<point number="38" name="Pulse_8 Min" units="per hour" value="NULL" />
+					<point number="39" name="Pulse_8 Max" units="per hour" value="NULL" />
+					<point number="40" name="Output 01" units="" value="0" />
+					<point number="41" name="Output 02" units="" value="0" />
+				</record>
+			</records>
+		</device>
+	</devices>
+</DAS>
