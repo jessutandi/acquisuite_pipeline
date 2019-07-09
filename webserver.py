@@ -32,12 +32,6 @@ def default():
 #     tbl = gbl_tbl[(gbl_tbl['Address'] == address) & (gbl_tbl['Point'] == point)]
 #     return tbl.to_html(header="true", table_id="table")
 #     #TODO: make index by address or record?
-    
-# # use this function in get_data_xml to push data to a dataframe
-# #TODO: Find a way to make this not take repeat data
-# def push_data(record, address, point, name, value):
-#     tbl = pd.DataFrame(data=[[record, address, point, name, value]], columns=["Record", "Address", "Point", "Name", "Value"])
-#     gbl_tbl = gbl_tbl.append(tbl, ignore_index=True)
 
 def get_data_xml(xmlTree):
     gbl_tbl = pd.DataFrame(columns=["Record", "Address", "Point", "Name", "Value"])
@@ -58,12 +52,11 @@ def get_data_xml(xmlTree):
                 if child.attrib["name"] == "Pulse_1" or child.attrib["name"] == "Pulse_8":
                     string += "RECORD " + str(counter) + " "
                     string += child.attrib["name"] + " " + child.attrib["value"] + " "
-                    #push_data(counter, address, child.attrib['number'], child.attrib['name'], child.attrib['value'])
                     tbl = pd.DataFrame(data=[[counter, address, child.attrib['number'], child.attrib['name'], child.attrib['value']]], 
                                        columns=["Record", "Address", "Point", "Name", "Value"])
                     gbl_tbl = gbl_tbl.append(tbl, ignore_index=True)
         counter += 1
-    gbl_tbl.to_csv('record_data', index=False)
+    gbl_tbl.to_csv('data/record_data', index=False)
     print(string)
     return string
 
