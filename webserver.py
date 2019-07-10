@@ -3,6 +3,7 @@ import xml.etree.ElementTree as ET
 import pandas as pd
 import numpy as np
 from pathlib import Path
+from datetime import datetime
 from flask import Flask, flash, request, redirect, url_for
 
 #BIG NOTE: PLEASE TURN OFF FIREWALL TO HAVE ACQUISUITE WORK! Need to figure out a protocol to allow AcquiSuite. 
@@ -26,13 +27,6 @@ def default():
     tree = ET.parse('xmlTest.xml')
     return get_data_xml(tree)
 
-# # @app.route('/get_data', methods = ['GET', 'POST'])
-# # this is getting info from the args, and return the respective dataframe
-# def get_data(address, point, start=0, end=0):
-#     tbl = gbl_tbl[(gbl_tbl['Address'] == address) & (gbl_tbl['Point'] == point)]
-#     return tbl.to_html(header="true", table_id="table")
-#     #TODO: make index by address or record?
-
 def get_data_xml(xmlTree):
     gbl_tbl = pd.DataFrame(columns=["Record", "Address", "Point", "Name", "Value"])
     root = xmlTree.getroot()
@@ -47,18 +41,50 @@ def get_data_xml(xmlTree):
     #Then we find all values and names of the Pulses we want
     #TODO: need to find dateTimes, address, and point values
     for record in root.iter('record'):
-        for child in record:
+        time = record.find('time').text
+        for child in record:         
             if "value" in child.attrib:
-                if child.attrib["name"] == "Pulse_1" or child.attrib["name"] == "Pulse_8":
-                    string += "RECORD " + str(counter) + " "
-                    string += child.attrib["name"] + " " + child.attrib["value"] + " "
-                    tbl = pd.DataFrame(data=[[counter, address, child.attrib['number'], child.attrib['name'], child.attrib['value']]], 
-                                       columns=["Record", "Address", "Point", "Name", "Value"])
-                    gbl_tbl = gbl_tbl.append(tbl, ignore_index=True)
+                string += "RECORD " + str(counter) + " "
+                string += child.attrib["name"] + " " + child.attrib["value"] + " "
+                tbl = pd.DataFrame(data=[[counter, address, child.attrib['number'], child.attrib['name'], child.attrib['value'], time]], 
+                                   columns=["Record", "Address", "Point", "Name", "Value", "Time"])
+                gbl_tbl = gbl_tbl.append(tbl, ignore_index=True)
         counter += 1
-    gbl_tbl.to_csv('data/record_data', index=False)
+    gbl_tbl.to_csv('data/' + address + '_data.csv', index=False)
     print(string)
     return string
+
+@app.route('/get_data')#, methods = ['GET', 'POST'])
+#get address, point, start, end
+#start and end are times, and must be in the format YEAR-MONTH-DAY (ex: 2019-06-17)
+#NOTE: the csv files are formated as ADDRESS_data.csv (ex: 250_data.csv)
+#NUANCES: start and end must have their hours separated by "_" (ex: 2019-06-17_02:55:00)
+def get_data():
+    address = request.args.get('address')
+    points = request.args.get('points')
+    start = request.args.get('start')
+    end = request.args.get('end')
+    
+    #NOTE: in order to bypass Flask list problems, this code takes points as a long string and splits it
+    points = points.split(",")
+    
+    table = pd.read_csv("data/" + address + "_data.csv")
+    table = table[table['Point'].isin(points)]
+    
+    #NOTE: converting start and end to datetimes
+    #NOTE: do we need to keep hours? Currently I am, which requires more user input
+    start = start.replace("_", " ")
+    end = end.replace("_", " ")
+    start = datetime.strptime(start, '%Y-%m-%d %H:%M:%S')
+    end = datetime.strptime(end, '%Y-%m-%d %H:%M:%S')
+    table["Time"] = table["Time"].apply(lambda x: datetime.strptime(x, '%Y-%m-%d %H:%M:%S'))
+
+    #Filtering now by time
+    table = table[(table['Time'] >= start) & (table['Time'] <= end)]
+    
+    print(table.to_csv(index=False))
+    return table.to_csv(index=False)
+    #EXAMPLE URL: http://localhost:8080/get_data?address=250&points=1,2,3&start=2019-06-17_02:55:00&end=2019-06-17_03:05:00
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080)
