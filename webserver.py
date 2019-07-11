@@ -61,15 +61,20 @@ def get_data_xml(xmlTree):
 #NUANCES: start and end must have their hours separated by "_" (ex: 2019-06-17_02:55:00)
 def get_data():
     address = request.args.get('address')
-    points = request.args.get('points')
+    pulses = request.args.get('pulses')
     start = request.args.get('start')
     end = request.args.get('end')
     
     #NOTE: in order to bypass Flask list problems, this code takes points as a long string and splits it
-    points = points.split(",")
+    #We also created a regex string to filter the table for our required points
+    #Please black box this section, some of the symbols are needed for regex
+    pulses = pulses.split(",")
+    regexed = "_" + pulses[0]
+    for pulse in pulses:
+        regexed += "|_" + pulse
     
     table = pd.read_csv("data/" + address + "_data.csv")
-    table = table[table['Point'].isin(points)]
+    table = table[table['Name'].str.contains(regexed)]
     
     #NOTE: converting start and end to datetimes
     #NOTE: do we need to keep hours? Currently I am, which requires more user input
@@ -82,9 +87,13 @@ def get_data():
     #Filtering now by time
     table = table[(table['Time'] >= start) & (table['Time'] <= end)]
     
+    #Dropping NaN values in Value column
+    table = table.dropna(subset=['Value'])
+    
     print(table.to_csv(index=False))
-    return table.to_csv(index=False)
-    #EXAMPLE URL: http://localhost:8080/get_data?address=250&points=1,2,3&start=2019-06-17_02:55:00&end=2019-06-17_03:05:00
+    #return table.to_csv(index=False)
+    return table.to_html(header="true", table_id="table")
+    #EXAMPLE URL: http://localhost:8080/get_data?address=250&pulses=1,2,3&start=2019-06-17_02:55:00&end=2019-06-17_03:05:00
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080)
