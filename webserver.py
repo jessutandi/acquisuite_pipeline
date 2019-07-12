@@ -27,6 +27,9 @@ def default():
     tree = ET.parse('xmlTest.xml')
     return get_data_xml(tree)
 
+#TODO: This method currently relies on the fact that acquisuite pushes out data with repeated information from previous
+#pushes (basically "queues" all its data). However, we want to eventually only push new data, which requires a csv update
+#rather than an entire repush
 def get_data_xml(xmlTree):
     gbl_tbl = pd.DataFrame(columns=["Record", "Address", "Point", "Name", "Value"])
     root = xmlTree.getroot()
@@ -36,29 +39,32 @@ def get_data_xml(xmlTree):
     for d in root.iter('device'):
         address = d.find('address').text
     
-    #This block specifically targets pulses 1 and 8. Not generalized yet!
     #How this works: We changed the XML file to a tree, then iterate through the child nodes with "record" as its tag,
     #Then we find all values and names of the Pulses we want
-    #TODO: need to find dateTimes, address, and point values
     for record in root.iter('record'):
         time = record.find('time').text
         for child in record:         
             if "value" in child.attrib:
                 string += "RECORD " + str(counter) + " "
-                string += child.attrib["name"] + " " + child.attrib["value"] + " "
+                string += child.attrib["name"] + " " + child.attrib["value"] + " "                    
                 tbl = pd.DataFrame(data=[[counter, address, child.attrib['number'], child.attrib['name'], child.attrib['value'], time]], 
                                    columns=["Record", "Address", "Point", "Name", "Value", "Time"])
                 gbl_tbl = gbl_tbl.append(tbl, ignore_index=True)
+                #checking for duplicates
+                if os.path.isfile('data/' + address + '_data.csv'):
+                    existing = pd.read_csv('data/' + address + '_data.csv')
+                    existing = existing.append(gbl_tbl)
+                    existing = existing[~existing.duplicated()]
+                    gbl_tbl = existing
         counter += 1
     gbl_tbl.to_csv('data/' + address + '_data.csv', index=False)
     print(string)
     return string
 
-@app.route('/get_data')#, methods = ['GET', 'POST'])
-#get address, point, start, end
+@app.route('/get_data')
 #start and end are times, and must be in the format YEAR-MONTH-DAY (ex: 2019-06-17)
 #NOTE: the csv files are formated as ADDRESS_data.csv (ex: 250_data.csv)
-#NUANCES: start and end must have their hours separated by "_" (ex: 2019-06-17_02:55:00)
+#NUANCES: start and end must have their hour and smaller units separated by "_" (ex: 2019-06-17_02:55:00)
 def get_data():
     address = request.args.get('address')
     pulses = request.args.get('pulses')
@@ -77,7 +83,6 @@ def get_data():
     table = table[table['Name'].str.contains(regexed)]
     
     #NOTE: converting start and end to datetimes
-    #NOTE: do we need to keep hours? Currently I am, which requires more user input
     start = start.replace("_", " ")
     end = end.replace("_", " ")
     start = datetime.strptime(start, '%Y-%m-%d %H:%M:%S')
