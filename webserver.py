@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 from pathlib import Path
 from datetime import datetime
-from flask import Flask, flash, request, redirect, url_for
+from flask import Flask, flash, request, redirect, url_for, make_response, jsonify
 
 #BIG NOTE: PLEASE TURN OFF FIREWALL TO HAVE ACQUISUITE WORK! Need to figure out a protocol to allow AcquiSuite. 
                   
@@ -20,35 +20,35 @@ def default():
     print("FORM: ", request.form)
     
     #This block takes the request.data, which is encoded in bytes, and decodes it to a string and cleans it. We then make it an XML tree.
-#     print(type(request.data))
-#     byte_to_string = request.data.decode("utf-8")
-#     clean_xml = byte_to_string.replace("\r\n", "")
-#     tree = ET.ElementTree(ET.fromstring(clean_xml))
-    tree = ET.parse('xmlTest.xml')
-    return get_data_xml(tree)
+    try: 
+        byte_to_string = request.data.decode("utf-8")
+        clean_xml = byte_to_string.replace("\r\n", "")
+        tree = ET.ElementTree(ET.fromstring(clean_xml))
+        get_data_xml(tree)
+    except:
+        print('SUCCESS START UP')
 
-#TODO: This method currently relies on the fact that acquisuite pushes out data with repeated information from previous
-#pushes (basically "queues" all its data). However, we want to eventually only push new data, which requires a csv update
-#rather than an entire repush
+    resp = make_response("<?xml version=\"1.0\"?>\n<DAS>\n<result>SUCCESS</result>\n</DAS>\n")
+    resp.headers['Status'] = '200 OK'
+    resp.headers['Pragma'] = 'no-cache'
+    resp.headers['Content-Type'] = 'text/xml'
+    return resp
+
 def get_data_xml(xmlTree):
     gbl_tbl = pd.DataFrame(columns=["Record", "Address", "Point", "Name", "Value"])
     root = xmlTree.getroot()
-    counter = 1
     address = 0
-    string = ""
     for d in root.iter('device'):
         address = d.find('address').text
-    
+
     #How this works: We changed the XML file to a tree, then iterate through the child nodes with "record" as its tag,
-    #Then we find all values and names of the Pulses we want
     for record in root.iter('record'):
         time = record.find('time').text
         for child in record:         
-            if "value" in child.attrib:
-                string += "RECORD " + str(counter) + " "
-                string += child.attrib["name"] + " " + child.attrib["value"] + " "                    
-                tbl = pd.DataFrame(data=[[counter, address, child.attrib['number'], child.attrib['name'], child.attrib['value'], time]], 
-                                   columns=["Record", "Address", "Point", "Name", "Value", "Time"])
+            if "value" in child.attrib:                 
+                tbl = pd.DataFrame(data=[[address, child.attrib['number'], 
+                                          child.attrib['name'], child.attrib['value'],time]], 
+                                   columns=["Address", "Point", "Name", "Value", "Time"])
                 gbl_tbl = gbl_tbl.append(tbl, ignore_index=True)
                 #checking for duplicates
                 if os.path.isfile('data/' + address + '_data.csv'):
@@ -56,10 +56,8 @@ def get_data_xml(xmlTree):
                     existing = existing.append(gbl_tbl)
                     existing = existing[~existing.duplicated()]
                     gbl_tbl = existing
-        counter += 1
     gbl_tbl.to_csv('data/' + address + '_data.csv', index=False)
-    print(string)
-    return string
+    return ''
 
 @app.route('/get_data')
 #start and end are times, and must be in the format YEAR-MONTH-DAY (ex: 2019-06-17)
@@ -98,7 +96,7 @@ def get_data():
     print(table.to_csv(index=False))
     #return table.to_csv(index=False)
     return table.to_html(header="true", table_id="table")
-    #EXAMPLE URL: http://localhost:8080/get_data?address=250&pulses=1,2,3&start=2019-06-17_02:55:00&end=2019-06-17_03:05:00
+    #EXAMPLE URL: http://localhost:8080/get_data?address=250&pulses=1,2,3&start=2019-07-15_02:05:00&end=2019-07-15_02:15:00
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080)
