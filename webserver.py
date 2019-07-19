@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 from pathlib import Path
 from datetime import datetime
-from flask import Flask, flash, request, redirect, url_for, make_response, jsonify
+from flask import Flask, flash, request, redirect, url_for, make_response
 
 #BIG NOTE: PLEASE TURN OFF FIREWALL TO HAVE ACQUISUITE WORK! Need to figure out a protocol to allow AcquiSuite. 
                   
