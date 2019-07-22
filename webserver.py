@@ -2,6 +2,7 @@ import os
 import xml.etree.ElementTree as ET 
 import pandas as pd
 import numpy as np
+import yaml
 from pathlib import Path
 from datetime import datetime
 from flask import Flask, flash, request, redirect, url_for, make_response
@@ -32,10 +33,13 @@ def default():
     resp.headers['Status'] = '200 OK'
     resp.headers['Pragma'] = 'no-cache'
     resp.headers['Content-Type'] = 'text/xml'
+    
+#     tree = ET.parse('xmlTest.xml')
+#     return get_data_xml(tree)
     return resp
 
 def get_data_xml(xmlTree):
-    gbl_tbl = pd.DataFrame(columns=["Record", "Address", "Point", "Name", "Value"])
+    gbl_tbl = pd.DataFrame(columns=["Address", "Point", "Name", "Value", "Time"])
     root = xmlTree.getroot()
     address = 0
     for d in root.iter('device'):
@@ -64,25 +68,36 @@ def get_data_xml(xmlTree):
 #NOTE: the csv files are formated as ADDRESS_data.csv (ex: 250_data.csv)
 #NUANCES: start and end must have their hour and smaller units separated by "_" (ex: 2019-06-17_02:55:00)
 def get_data():
-    address = request.args.get('address')
-    pulses = request.args.get('pulses')
-    start = request.args.get('start')
-    end = request.args.get('end')
+#     address = request.args.get('address')
+#     pulses = request.args.get('pulses')
+#     start = request.args.get('start')
+#     end = request.args.get('end')
+
+    with open("config.yaml", 'r') as stream:
+        config = yaml.safe_load(stream)
+        
+    address = config['address']
+    points = config['points']
+    print(type(points))
+    for point in points:
+        print(point)
+    start = config['start']
+    end = config['end']
     
     #NOTE: in order to bypass Flask list problems, this code takes points as a long string and splits it
     #We also created a regex string to filter the table for our required points
     #Please black box this section, some of the symbols are needed for regex
-    pulses = pulses.split(",")
-    regexed = "_" + pulses[0]
-    for pulse in pulses:
-        regexed += "|_" + pulse
+#     pulses = pulses.split(",")
+#     regexed = "_" + pulses[0]
+#     for pulse in pulses:
+#         regexed += "|_" + pulse
     
-    table = pd.read_csv("data/" + address + "_data.csv")
-    table = table[table['Name'].str.contains(regexed)]
+    table = pd.read_csv("data/" + str(address) + "_data.csv")
+    table = table[table['Point'].isin(points)]
     
     #NOTE: converting start and end to datetimes
-    start = start.replace("_", " ")
-    end = end.replace("_", " ")
+#     start = start.replace("_", " ")
+#     end = end.replace("_", " ")
     start = datetime.strptime(start, '%Y-%m-%d %H:%M:%S')
     end = datetime.strptime(end, '%Y-%m-%d %H:%M:%S')
     table["Time"] = table["Time"].apply(lambda x: datetime.strptime(x, '%Y-%m-%d %H:%M:%S'))
