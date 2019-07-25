@@ -329,13 +329,693 @@ Address,Point,Name,Value,Time
 28,7,Pulse #2 Instantaneous,,2019-07-24 18:58:24
 28,8,Pulse #2 Min,,2019-07-24 18:58:24
 28,9,Pulse #2 Max,,2019-07-24 18:58:24
-28,0,TRW Makeup Water,NULL,2019-07-24 19:01:15
-28,1,TRW Makeup Water Rate,NULL,2019-07-24 19:01:15
-28,2,TRW Makeup Water Instantaneous,NULL,2019-07-24 19:01:15
-28,3,TRW Makeup Water Min,NULL,2019-07-24 19:01:15
-28,4,TRW Makeup Water Max,NULL,2019-07-24 19:01:15
-28,5,Pulse #2,NULL,2019-07-24 19:01:15
-28,6,Pulse #2 Rate,NULL,2019-07-24 19:01:15
-28,7,Pulse #2 Instantaneous,NULL,2019-07-24 19:01:15
-28,8,Pulse #2 Min,NULL,2019-07-24 19:01:15
-28,9,Pulse #2 Max,NULL,2019-07-24 19:01:15
+28,0,TRW Makeup Water,,2019-07-24 19:01:15
+28,1,TRW Makeup Water Rate,,2019-07-24 19:01:15
+28,2,TRW Makeup Water Instantaneous,,2019-07-24 19:01:15
+28,3,TRW Makeup Water Min,,2019-07-24 19:01:15
+28,4,TRW Makeup Water Max,,2019-07-24 19:01:15
+28,5,Pulse #2,,2019-07-24 19:01:15
+28,6,Pulse #2 Rate,,2019-07-24 19:01:15
+28,7,Pulse #2 Instantaneous,,2019-07-24 19:01:15
+28,8,Pulse #2 Min,,2019-07-24 19:01:15
+28,9,Pulse #2 Max,,2019-07-24 19:01:15
+28,0,TRW Makeup Water,,2019-07-24 19:07:17
+28,1,TRW Makeup Water Rate,,2019-07-24 19:07:17
+28,2,TRW Makeup Water Instantaneous,,2019-07-24 19:07:17
+28,3,TRW Makeup Water Min,,2019-07-24 19:07:17
+28,4,TRW Makeup Water Max,,2019-07-24 19:07:17
+28,5,Pulse #2,,2019-07-24 19:07:17
+28,6,Pulse #2 Rate,,2019-07-24 19:07:17
+28,7,Pulse #2 Instantaneous,,2019-07-24 19:07:17
+28,8,Pulse #2 Min,,2019-07-24 19:07:17
+28,9,Pulse #2 Max,,2019-07-24 19:07:17
+28,0,TRW Makeup Water,3.0,2019-07-24 19:13:44
+28,1,TRW Makeup Water Rate,,2019-07-24 19:13:44
+28,2,TRW Makeup Water Instantaneous,,2019-07-24 19:13:44
+28,3,TRW Makeup Water Min,,2019-07-24 19:13:44
+28,4,TRW Makeup Water Max,,2019-07-24 19:13:44
+28,5,Pulse #2,1.0,2019-07-24 19:13:44
+28,6,Pulse #2 Rate,,2019-07-24 19:13:44
+28,7,Pulse #2 Instantaneous,,2019-07-24 19:13:44
+28,8,Pulse #2 Min,,2019-07-24 19:13:44
+28,9,Pulse #2 Max,,2019-07-24 19:13:44
+28,0,TRW Makeup Water,,2019-07-24 19:20:51
+28,1,TRW Makeup Water Rate,,2019-07-24 19:20:51
+28,2,TRW Makeup Water Instantaneous,,2019-07-24 19:20:51
+28,3,TRW Makeup Water Min,,2019-07-24 19:20:51
+28,4,TRW Makeup Water Max,,2019-07-24 19:20:51
+28,5,Pulse #2,,2019-07-24 19:20:51
+28,6,Pulse #2 Rate,,2019-07-24 19:20:51
+28,7,Pulse #2 Instantaneous,,2019-07-24 19:20:51
+28,8,Pulse #2 Min,,2019-07-24 19:20:51
+28,9,Pulse #2 Max,,2019-07-24 19:20:51
+28,0,TRW Makeup Water,,2019-07-24 19:27:32
+28,1,TRW Makeup Water Rate,,2019-07-24 19:27:32
+28,2,TRW Makeup Water Instantaneous,,2019-07-24 19:27:32
+28,3,TRW Makeup Water Min,,2019-07-24 19:27:32
+28,4,TRW Makeup Water Max,,2019-07-24 19:27:32
+28,5,Pulse #2,,2019-07-24 19:27:32
+28,6,Pulse #2 Rate,,2019-07-24 19:27:32
+28,7,Pulse #2 Instantaneous,,2019-07-24 19:27:32
+28,8,Pulse #2 Min,,2019-07-24 19:27:32
+28,9,Pulse #2 Max,,2019-07-24 19:27:32
+28,0,TRW Makeup Water,,2019-07-24 19:31:08
+28,1,TRW Makeup Water Rate,,2019-07-24 19:31:08
+28,2,TRW Makeup Water Instantaneous,,2019-07-24 19:31:08
+28,3,TRW Makeup Water Min,,2019-07-24 19:31:08
+28,4,TRW Makeup Water Max,,2019-07-24 19:31:08
+28,5,Pulse #2,,2019-07-24 19:31:08
+28,6,Pulse #2 Rate,,2019-07-24 19:31:08
+28,7,Pulse #2 Instantaneous,,2019-07-24 19:31:08
+28,8,Pulse #2 Min,,2019-07-24 19:31:08
+28,9,Pulse #2 Max,,2019-07-24 19:31:08
+28,0,TRW Makeup Water,,2019-07-24 19:38:40
+28,1,TRW Makeup Water Rate,,2019-07-24 19:38:40
+28,2,TRW Makeup Water Instantaneous,,2019-07-24 19:38:40
+28,3,TRW Makeup Water Min,,2019-07-24 19:38:40
+28,4,TRW Makeup Water Max,,2019-07-24 19:38:40
+28,5,Pulse #2,,2019-07-24 19:38:40
+28,6,Pulse #2 Rate,,2019-07-24 19:38:40
+28,7,Pulse #2 Instantaneous,,2019-07-24 19:38:40
+28,8,Pulse #2 Min,,2019-07-24 19:38:40
+28,9,Pulse #2 Max,,2019-07-24 19:38:40
+28,0,TRW Makeup Water,,2019-07-24 19:46:31
+28,1,TRW Makeup Water Rate,,2019-07-24 19:46:31
+28,2,TRW Makeup Water Instantaneous,,2019-07-24 19:46:31
+28,3,TRW Makeup Water Min,,2019-07-24 19:46:31
+28,4,TRW Makeup Water Max,,2019-07-24 19:46:31
+28,5,Pulse #2,,2019-07-24 19:46:31
+28,6,Pulse #2 Rate,,2019-07-24 19:46:31
+28,7,Pulse #2 Instantaneous,,2019-07-24 19:46:31
+28,8,Pulse #2 Min,,2019-07-24 19:46:31
+28,9,Pulse #2 Max,,2019-07-24 19:46:31
+28,0,TRW Makeup Water,,2019-07-24 19:51:43
+28,1,TRW Makeup Water Rate,,2019-07-24 19:51:43
+28,2,TRW Makeup Water Instantaneous,,2019-07-24 19:51:43
+28,3,TRW Makeup Water Min,,2019-07-24 19:51:43
+28,4,TRW Makeup Water Max,,2019-07-24 19:51:43
+28,5,Pulse #2,,2019-07-24 19:51:43
+28,6,Pulse #2 Rate,,2019-07-24 19:51:43
+28,7,Pulse #2 Instantaneous,,2019-07-24 19:51:43
+28,8,Pulse #2 Min,,2019-07-24 19:51:43
+28,9,Pulse #2 Max,,2019-07-24 19:51:43
+28,0,TRW Makeup Water,,2019-07-24 19:57:12
+28,1,TRW Makeup Water Rate,,2019-07-24 19:57:12
+28,2,TRW Makeup Water Instantaneous,,2019-07-24 19:57:12
+28,3,TRW Makeup Water Min,,2019-07-24 19:57:12
+28,4,TRW Makeup Water Max,,2019-07-24 19:57:12
+28,5,Pulse #2,,2019-07-24 19:57:12
+28,6,Pulse #2 Rate,,2019-07-24 19:57:12
+28,7,Pulse #2 Instantaneous,,2019-07-24 19:57:12
+28,8,Pulse #2 Min,,2019-07-24 19:57:12
+28,9,Pulse #2 Max,,2019-07-24 19:57:12
+28,0,TRW Makeup Water,,2019-07-24 20:09:28
+28,1,TRW Makeup Water Rate,,2019-07-24 20:09:28
+28,2,TRW Makeup Water Instantaneous,,2019-07-24 20:09:28
+28,3,TRW Makeup Water Min,,2019-07-24 20:09:28
+28,4,TRW Makeup Water Max,,2019-07-24 20:09:28
+28,5,Pulse #2,,2019-07-24 20:09:28
+28,6,Pulse #2 Rate,,2019-07-24 20:09:28
+28,7,Pulse #2 Instantaneous,,2019-07-24 20:09:28
+28,8,Pulse #2 Min,,2019-07-24 20:09:28
+28,9,Pulse #2 Max,,2019-07-24 20:09:28
+28,0,TRW Makeup Water,,2019-07-24 20:16:32
+28,1,TRW Makeup Water Rate,,2019-07-24 20:16:32
+28,2,TRW Makeup Water Instantaneous,,2019-07-24 20:16:32
+28,3,TRW Makeup Water Min,,2019-07-24 20:16:32
+28,4,TRW Makeup Water Max,,2019-07-24 20:16:32
+28,5,Pulse #2,,2019-07-24 20:16:32
+28,6,Pulse #2 Rate,,2019-07-24 20:16:32
+28,7,Pulse #2 Instantaneous,,2019-07-24 20:16:32
+28,8,Pulse #2 Min,,2019-07-24 20:16:32
+28,9,Pulse #2 Max,,2019-07-24 20:16:32
+28,0,TRW Makeup Water,,2019-07-24 20:23:50
+28,1,TRW Makeup Water Rate,,2019-07-24 20:23:50
+28,2,TRW Makeup Water Instantaneous,,2019-07-24 20:23:50
+28,3,TRW Makeup Water Min,,2019-07-24 20:23:50
+28,4,TRW Makeup Water Max,,2019-07-24 20:23:50
+28,5,Pulse #2,,2019-07-24 20:23:50
+28,6,Pulse #2 Rate,,2019-07-24 20:23:50
+28,7,Pulse #2 Instantaneous,,2019-07-24 20:23:50
+28,8,Pulse #2 Min,,2019-07-24 20:23:50
+28,9,Pulse #2 Max,,2019-07-24 20:23:50
+28,0,TRW Makeup Water,,2019-07-24 20:33:30
+28,1,TRW Makeup Water Rate,,2019-07-24 20:33:30
+28,2,TRW Makeup Water Instantaneous,,2019-07-24 20:33:30
+28,3,TRW Makeup Water Min,,2019-07-24 20:33:30
+28,4,TRW Makeup Water Max,,2019-07-24 20:33:30
+28,5,Pulse #2,,2019-07-24 20:33:30
+28,6,Pulse #2 Rate,,2019-07-24 20:33:30
+28,7,Pulse #2 Instantaneous,,2019-07-24 20:33:30
+28,8,Pulse #2 Min,,2019-07-24 20:33:30
+28,9,Pulse #2 Max,,2019-07-24 20:33:30
+28,0,TRW Makeup Water,,2019-07-24 20:36:38
+28,1,TRW Makeup Water Rate,,2019-07-24 20:36:38
+28,2,TRW Makeup Water Instantaneous,,2019-07-24 20:36:38
+28,3,TRW Makeup Water Min,,2019-07-24 20:36:38
+28,4,TRW Makeup Water Max,,2019-07-24 20:36:38
+28,5,Pulse #2,,2019-07-24 20:36:38
+28,6,Pulse #2 Rate,,2019-07-24 20:36:38
+28,7,Pulse #2 Instantaneous,,2019-07-24 20:36:38
+28,8,Pulse #2 Min,,2019-07-24 20:36:38
+28,9,Pulse #2 Max,,2019-07-24 20:36:38
+28,0,TRW Makeup Water,3.0,2019-07-24 20:40:45
+28,1,TRW Makeup Water Rate,,2019-07-24 20:40:45
+28,2,TRW Makeup Water Instantaneous,,2019-07-24 20:40:45
+28,3,TRW Makeup Water Min,,2019-07-24 20:40:45
+28,4,TRW Makeup Water Max,,2019-07-24 20:40:45
+28,5,Pulse #2,1.0,2019-07-24 20:40:45
+28,6,Pulse #2 Rate,,2019-07-24 20:40:45
+28,7,Pulse #2 Instantaneous,,2019-07-24 20:40:45
+28,8,Pulse #2 Min,,2019-07-24 20:40:45
+28,9,Pulse #2 Max,,2019-07-24 20:40:45
+28,0,TRW Makeup Water,,2019-07-24 20:47:01
+28,1,TRW Makeup Water Rate,,2019-07-24 20:47:01
+28,2,TRW Makeup Water Instantaneous,,2019-07-24 20:47:01
+28,3,TRW Makeup Water Min,,2019-07-24 20:47:01
+28,4,TRW Makeup Water Max,,2019-07-24 20:47:01
+28,5,Pulse #2,,2019-07-24 20:47:01
+28,6,Pulse #2 Rate,,2019-07-24 20:47:01
+28,7,Pulse #2 Instantaneous,,2019-07-24 20:47:01
+28,8,Pulse #2 Min,,2019-07-24 20:47:01
+28,9,Pulse #2 Max,,2019-07-24 20:47:01
+28,0,TRW Makeup Water,,2019-07-24 20:58:26
+28,1,TRW Makeup Water Rate,,2019-07-24 20:58:26
+28,2,TRW Makeup Water Instantaneous,,2019-07-24 20:58:26
+28,3,TRW Makeup Water Min,,2019-07-24 20:58:26
+28,4,TRW Makeup Water Max,,2019-07-24 20:58:26
+28,5,Pulse #2,,2019-07-24 20:58:26
+28,6,Pulse #2 Rate,,2019-07-24 20:58:26
+28,7,Pulse #2 Instantaneous,,2019-07-24 20:58:26
+28,8,Pulse #2 Min,,2019-07-24 20:58:26
+28,9,Pulse #2 Max,,2019-07-24 20:58:26
+28,0,TRW Makeup Water,,2019-07-24 21:01:02
+28,1,TRW Makeup Water Rate,,2019-07-24 21:01:02
+28,2,TRW Makeup Water Instantaneous,,2019-07-24 21:01:02
+28,3,TRW Makeup Water Min,,2019-07-24 21:01:02
+28,4,TRW Makeup Water Max,,2019-07-24 21:01:02
+28,5,Pulse #2,,2019-07-24 21:01:02
+28,6,Pulse #2 Rate,,2019-07-24 21:01:02
+28,7,Pulse #2 Instantaneous,,2019-07-24 21:01:02
+28,8,Pulse #2 Min,,2019-07-24 21:01:02
+28,9,Pulse #2 Max,,2019-07-24 21:01:02
+28,0,TRW Makeup Water,,2019-07-24 21:06:26
+28,1,TRW Makeup Water Rate,,2019-07-24 21:06:26
+28,2,TRW Makeup Water Instantaneous,,2019-07-24 21:06:26
+28,3,TRW Makeup Water Min,,2019-07-24 21:06:26
+28,4,TRW Makeup Water Max,,2019-07-24 21:06:26
+28,5,Pulse #2,,2019-07-24 21:06:26
+28,6,Pulse #2 Rate,,2019-07-24 21:06:26
+28,7,Pulse #2 Instantaneous,,2019-07-24 21:06:26
+28,8,Pulse #2 Min,,2019-07-24 21:06:26
+28,9,Pulse #2 Max,,2019-07-24 21:06:26
+28,0,TRW Makeup Water,3.0,2019-07-24 21:16:06
+28,1,TRW Makeup Water Rate,,2019-07-24 21:16:06
+28,2,TRW Makeup Water Instantaneous,,2019-07-24 21:16:06
+28,3,TRW Makeup Water Min,,2019-07-24 21:16:06
+28,4,TRW Makeup Water Max,,2019-07-24 21:16:06
+28,5,Pulse #2,1.0,2019-07-24 21:16:06
+28,6,Pulse #2 Rate,,2019-07-24 21:16:06
+28,7,Pulse #2 Instantaneous,,2019-07-24 21:16:06
+28,8,Pulse #2 Min,,2019-07-24 21:16:06
+28,9,Pulse #2 Max,,2019-07-24 21:16:06
+28,0,TRW Makeup Water,,2019-07-24 21:22:25
+28,1,TRW Makeup Water Rate,,2019-07-24 21:22:25
+28,2,TRW Makeup Water Instantaneous,,2019-07-24 21:22:25
+28,3,TRW Makeup Water Min,,2019-07-24 21:22:25
+28,4,TRW Makeup Water Max,,2019-07-24 21:22:25
+28,5,Pulse #2,,2019-07-24 21:22:25
+28,6,Pulse #2 Rate,,2019-07-24 21:22:25
+28,7,Pulse #2 Instantaneous,,2019-07-24 21:22:25
+28,8,Pulse #2 Min,,2019-07-24 21:22:25
+28,9,Pulse #2 Max,,2019-07-24 21:22:25
+28,0,TRW Makeup Water,,2019-07-24 21:28:53
+28,1,TRW Makeup Water Rate,,2019-07-24 21:28:53
+28,2,TRW Makeup Water Instantaneous,,2019-07-24 21:28:53
+28,3,TRW Makeup Water Min,,2019-07-24 21:28:53
+28,4,TRW Makeup Water Max,,2019-07-24 21:28:53
+28,5,Pulse #2,,2019-07-24 21:28:53
+28,6,Pulse #2 Rate,,2019-07-24 21:28:53
+28,7,Pulse #2 Instantaneous,,2019-07-24 21:28:53
+28,8,Pulse #2 Min,,2019-07-24 21:28:53
+28,9,Pulse #2 Max,,2019-07-24 21:28:53
+28,0,TRW Makeup Water,3.0,2019-07-24 21:37:35
+28,1,TRW Makeup Water Rate,,2019-07-24 21:37:35
+28,2,TRW Makeup Water Instantaneous,,2019-07-24 21:37:35
+28,3,TRW Makeup Water Min,,2019-07-24 21:37:35
+28,4,TRW Makeup Water Max,,2019-07-24 21:37:35
+28,5,Pulse #2,1.0,2019-07-24 21:37:35
+28,6,Pulse #2 Rate,,2019-07-24 21:37:35
+28,7,Pulse #2 Instantaneous,,2019-07-24 21:37:35
+28,8,Pulse #2 Min,,2019-07-24 21:37:35
+28,9,Pulse #2 Max,,2019-07-24 21:37:35
+28,0,TRW Makeup Water,3.0,2019-07-24 21:45:13
+28,1,TRW Makeup Water Rate,0.0,2019-07-24 21:45:13
+28,2,TRW Makeup Water Instantaneous,0.0,2019-07-24 21:45:13
+28,3,TRW Makeup Water Min,0.0,2019-07-24 21:45:13
+28,4,TRW Makeup Water Max,0.0,2019-07-24 21:45:13
+28,5,Pulse #2,1.0,2019-07-24 21:45:13
+28,6,Pulse #2 Rate,0.0,2019-07-24 21:45:13
+28,7,Pulse #2 Instantaneous,0.0,2019-07-24 21:45:13
+28,8,Pulse #2 Min,0.0,2019-07-24 21:45:13
+28,9,Pulse #2 Max,0.0,2019-07-24 21:45:13
+28,0,TRW Makeup Water,3.0,2019-07-24 21:54:07
+28,1,TRW Makeup Water Rate,0.0,2019-07-24 21:54:07
+28,2,TRW Makeup Water Instantaneous,0.0,2019-07-24 21:54:07
+28,3,TRW Makeup Water Min,0.0,2019-07-24 21:54:07
+28,4,TRW Makeup Water Max,0.0,2019-07-24 21:54:07
+28,5,Pulse #2,1.0,2019-07-24 21:54:07
+28,6,Pulse #2 Rate,0.0,2019-07-24 21:54:07
+28,7,Pulse #2 Instantaneous,0.0,2019-07-24 21:54:07
+28,8,Pulse #2 Min,0.0,2019-07-24 21:54:07
+28,9,Pulse #2 Max,0.0,2019-07-24 21:54:07
+28,0,TRW Makeup Water,3.0,2019-07-24 22:01:20
+28,1,TRW Makeup Water Rate,0.0,2019-07-24 22:01:20
+28,2,TRW Makeup Water Instantaneous,0.0,2019-07-24 22:01:20
+28,3,TRW Makeup Water Min,0.0,2019-07-24 22:01:20
+28,4,TRW Makeup Water Max,0.0,2019-07-24 22:01:20
+28,5,Pulse #2,1.0,2019-07-24 22:01:20
+28,6,Pulse #2 Rate,0.0,2019-07-24 22:01:20
+28,7,Pulse #2 Instantaneous,0.0,2019-07-24 22:01:20
+28,8,Pulse #2 Min,0.0,2019-07-24 22:01:20
+28,9,Pulse #2 Max,0.0,2019-07-24 22:01:20
+28,0,TRW Makeup Water,3.0,2019-07-24 22:05:47
+28,1,TRW Makeup Water Rate,0.0,2019-07-24 22:05:47
+28,2,TRW Makeup Water Instantaneous,0.0,2019-07-24 22:05:47
+28,3,TRW Makeup Water Min,0.0,2019-07-24 22:05:47
+28,4,TRW Makeup Water Max,0.0,2019-07-24 22:05:47
+28,5,Pulse #2,1.0,2019-07-24 22:05:47
+28,6,Pulse #2 Rate,0.0,2019-07-24 22:05:47
+28,7,Pulse #2 Instantaneous,0.0,2019-07-24 22:05:47
+28,8,Pulse #2 Min,0.0,2019-07-24 22:05:47
+28,9,Pulse #2 Max,0.0,2019-07-24 22:05:47
+28,0,TRW Makeup Water,,2019-07-24 22:17:25
+28,1,TRW Makeup Water Rate,,2019-07-24 22:17:25
+28,2,TRW Makeup Water Instantaneous,,2019-07-24 22:17:25
+28,3,TRW Makeup Water Min,,2019-07-24 22:17:25
+28,4,TRW Makeup Water Max,,2019-07-24 22:17:25
+28,5,Pulse #2,,2019-07-24 22:17:25
+28,6,Pulse #2 Rate,,2019-07-24 22:17:25
+28,7,Pulse #2 Instantaneous,,2019-07-24 22:17:25
+28,8,Pulse #2 Min,,2019-07-24 22:17:25
+28,9,Pulse #2 Max,,2019-07-24 22:17:25
+28,0,TRW Makeup Water,3.0,2019-07-24 22:26:34
+28,1,TRW Makeup Water Rate,,2019-07-24 22:26:34
+28,2,TRW Makeup Water Instantaneous,,2019-07-24 22:26:34
+28,3,TRW Makeup Water Min,,2019-07-24 22:26:34
+28,4,TRW Makeup Water Max,,2019-07-24 22:26:34
+28,5,Pulse #2,1.0,2019-07-24 22:26:34
+28,6,Pulse #2 Rate,,2019-07-24 22:26:34
+28,7,Pulse #2 Instantaneous,,2019-07-24 22:26:34
+28,8,Pulse #2 Min,,2019-07-24 22:26:34
+28,9,Pulse #2 Max,,2019-07-24 22:26:34
+28,0,TRW Makeup Water,3.0,2019-07-24 22:33:05
+28,1,TRW Makeup Water Rate,0.0,2019-07-24 22:33:05
+28,2,TRW Makeup Water Instantaneous,0.0,2019-07-24 22:33:05
+28,3,TRW Makeup Water Min,0.0,2019-07-24 22:33:05
+28,4,TRW Makeup Water Max,0.0,2019-07-24 22:33:05
+28,5,Pulse #2,1.0,2019-07-24 22:33:05
+28,6,Pulse #2 Rate,0.0,2019-07-24 22:33:05
+28,7,Pulse #2 Instantaneous,0.0,2019-07-24 22:33:05
+28,8,Pulse #2 Min,0.0,2019-07-24 22:33:05
+28,9,Pulse #2 Max,0.0,2019-07-24 22:33:05
+28,0,TRW Makeup Water,,2019-07-24 22:42:24
+28,1,TRW Makeup Water Rate,,2019-07-24 22:42:24
+28,2,TRW Makeup Water Instantaneous,,2019-07-24 22:42:24
+28,3,TRW Makeup Water Min,,2019-07-24 22:42:24
+28,4,TRW Makeup Water Max,,2019-07-24 22:42:24
+28,5,Pulse #2,,2019-07-24 22:42:24
+28,6,Pulse #2 Rate,,2019-07-24 22:42:24
+28,7,Pulse #2 Instantaneous,,2019-07-24 22:42:24
+28,8,Pulse #2 Min,,2019-07-24 22:42:24
+28,9,Pulse #2 Max,,2019-07-24 22:42:24
+28,0,TRW Makeup Water,,2019-07-24 22:47:03
+28,1,TRW Makeup Water Rate,,2019-07-24 22:47:03
+28,2,TRW Makeup Water Instantaneous,,2019-07-24 22:47:03
+28,3,TRW Makeup Water Min,,2019-07-24 22:47:03
+28,4,TRW Makeup Water Max,,2019-07-24 22:47:03
+28,5,Pulse #2,,2019-07-24 22:47:03
+28,6,Pulse #2 Rate,,2019-07-24 22:47:03
+28,7,Pulse #2 Instantaneous,,2019-07-24 22:47:03
+28,8,Pulse #2 Min,,2019-07-24 22:47:03
+28,9,Pulse #2 Max,,2019-07-24 22:47:03
+28,0,TRW Makeup Water,,2019-07-24 22:57:01
+28,1,TRW Makeup Water Rate,,2019-07-24 22:57:01
+28,2,TRW Makeup Water Instantaneous,,2019-07-24 22:57:01
+28,3,TRW Makeup Water Min,,2019-07-24 22:57:01
+28,4,TRW Makeup Water Max,,2019-07-24 22:57:01
+28,5,Pulse #2,,2019-07-24 22:57:01
+28,6,Pulse #2 Rate,,2019-07-24 22:57:01
+28,7,Pulse #2 Instantaneous,,2019-07-24 22:57:01
+28,8,Pulse #2 Min,,2019-07-24 22:57:01
+28,9,Pulse #2 Max,,2019-07-24 22:57:01
+28,0,TRW Makeup Water,,2019-07-24 23:01:41
+28,1,TRW Makeup Water Rate,,2019-07-24 23:01:41
+28,2,TRW Makeup Water Instantaneous,,2019-07-24 23:01:41
+28,3,TRW Makeup Water Min,,2019-07-24 23:01:41
+28,4,TRW Makeup Water Max,,2019-07-24 23:01:41
+28,5,Pulse #2,,2019-07-24 23:01:41
+28,6,Pulse #2 Rate,,2019-07-24 23:01:41
+28,7,Pulse #2 Instantaneous,,2019-07-24 23:01:41
+28,8,Pulse #2 Min,,2019-07-24 23:01:41
+28,9,Pulse #2 Max,,2019-07-24 23:01:41
+28,0,TRW Makeup Water,,2019-07-24 23:12:31
+28,1,TRW Makeup Water Rate,,2019-07-24 23:12:31
+28,2,TRW Makeup Water Instantaneous,,2019-07-24 23:12:31
+28,3,TRW Makeup Water Min,,2019-07-24 23:12:31
+28,4,TRW Makeup Water Max,,2019-07-24 23:12:31
+28,5,Pulse #2,,2019-07-24 23:12:31
+28,6,Pulse #2 Rate,,2019-07-24 23:12:31
+28,7,Pulse #2 Instantaneous,,2019-07-24 23:12:31
+28,8,Pulse #2 Min,,2019-07-24 23:12:31
+28,9,Pulse #2 Max,,2019-07-24 23:12:31
+28,0,TRW Makeup Water,,2019-07-24 23:18:32
+28,1,TRW Makeup Water Rate,,2019-07-24 23:18:32
+28,2,TRW Makeup Water Instantaneous,,2019-07-24 23:18:32
+28,3,TRW Makeup Water Min,,2019-07-24 23:18:32
+28,4,TRW Makeup Water Max,,2019-07-24 23:18:32
+28,5,Pulse #2,,2019-07-24 23:18:32
+28,6,Pulse #2 Rate,,2019-07-24 23:18:32
+28,7,Pulse #2 Instantaneous,,2019-07-24 23:18:32
+28,8,Pulse #2 Min,,2019-07-24 23:18:32
+28,9,Pulse #2 Max,,2019-07-24 23:18:32
+28,0,TRW Makeup Water,,2019-07-24 23:23:19
+28,1,TRW Makeup Water Rate,,2019-07-24 23:23:19
+28,2,TRW Makeup Water Instantaneous,,2019-07-24 23:23:19
+28,3,TRW Makeup Water Min,,2019-07-24 23:23:19
+28,4,TRW Makeup Water Max,,2019-07-24 23:23:19
+28,5,Pulse #2,,2019-07-24 23:23:19
+28,6,Pulse #2 Rate,,2019-07-24 23:23:19
+28,7,Pulse #2 Instantaneous,,2019-07-24 23:23:19
+28,8,Pulse #2 Min,,2019-07-24 23:23:19
+28,9,Pulse #2 Max,,2019-07-24 23:23:19
+28,0,TRW Makeup Water,,2019-07-25 18:11:14
+28,1,TRW Makeup Water Rate,,2019-07-25 18:11:14
+28,2,TRW Makeup Water Instantaneous,,2019-07-25 18:11:14
+28,3,TRW Makeup Water Min,,2019-07-25 18:11:14
+28,4,TRW Makeup Water Max,,2019-07-25 18:11:14
+28,5,Pulse #2,,2019-07-25 18:11:14
+28,6,Pulse #2 Rate,,2019-07-25 18:11:14
+28,7,Pulse #2 Instantaneous,,2019-07-25 18:11:14
+28,8,Pulse #2 Min,,2019-07-25 18:11:14
+28,9,Pulse #2 Max,,2019-07-25 18:11:14
+28,0,TRW Makeup Water,,2019-07-25 18:14:31
+28,1,TRW Makeup Water Rate,,2019-07-25 18:14:31
+28,2,TRW Makeup Water Instantaneous,,2019-07-25 18:14:31
+28,3,TRW Makeup Water Min,,2019-07-25 18:14:31
+28,4,TRW Makeup Water Max,,2019-07-25 18:14:31
+28,5,Pulse #2,,2019-07-25 18:14:31
+28,6,Pulse #2 Rate,,2019-07-25 18:14:31
+28,7,Pulse #2 Instantaneous,,2019-07-25 18:14:31
+28,8,Pulse #2 Min,,2019-07-25 18:14:31
+28,9,Pulse #2 Max,,2019-07-25 18:14:31
+28,0,TRW Makeup Water,,2019-07-25 18:20:59
+28,1,TRW Makeup Water Rate,,2019-07-25 18:20:59
+28,2,TRW Makeup Water Instantaneous,,2019-07-25 18:20:59
+28,3,TRW Makeup Water Min,,2019-07-25 18:20:59
+28,4,TRW Makeup Water Max,,2019-07-25 18:20:59
+28,5,Pulse #2,,2019-07-25 18:20:59
+28,6,Pulse #2 Rate,,2019-07-25 18:20:59
+28,7,Pulse #2 Instantaneous,,2019-07-25 18:20:59
+28,8,Pulse #2 Min,,2019-07-25 18:20:59
+28,9,Pulse #2 Max,,2019-07-25 18:20:59
+28,0,TRW Makeup Water,,2019-07-25 18:32:35
+28,1,TRW Makeup Water Rate,,2019-07-25 18:32:35
+28,2,TRW Makeup Water Instantaneous,,2019-07-25 18:32:35
+28,3,TRW Makeup Water Min,,2019-07-25 18:32:35
+28,4,TRW Makeup Water Max,,2019-07-25 18:32:35
+28,5,Pulse #2,,2019-07-25 18:32:35
+28,6,Pulse #2 Rate,,2019-07-25 18:32:35
+28,7,Pulse #2 Instantaneous,,2019-07-25 18:32:35
+28,8,Pulse #2 Min,,2019-07-25 18:32:35
+28,9,Pulse #2 Max,,2019-07-25 18:32:35
+28,0,TRW Makeup Water,,2019-07-25 18:38:28
+28,1,TRW Makeup Water Rate,,2019-07-25 18:38:28
+28,2,TRW Makeup Water Instantaneous,,2019-07-25 18:38:28
+28,3,TRW Makeup Water Min,,2019-07-25 18:38:28
+28,4,TRW Makeup Water Max,,2019-07-25 18:38:28
+28,5,Pulse #2,,2019-07-25 18:38:28
+28,6,Pulse #2 Rate,,2019-07-25 18:38:28
+28,7,Pulse #2 Instantaneous,,2019-07-25 18:38:28
+28,8,Pulse #2 Min,,2019-07-25 18:38:28
+28,9,Pulse #2 Max,,2019-07-25 18:38:28
+28,0,TRW Makeup Water,,2019-07-25 18:41:03
+28,1,TRW Makeup Water Rate,,2019-07-25 18:41:03
+28,2,TRW Makeup Water Instantaneous,,2019-07-25 18:41:03
+28,3,TRW Makeup Water Min,,2019-07-25 18:41:03
+28,4,TRW Makeup Water Max,,2019-07-25 18:41:03
+28,5,Pulse #2,,2019-07-25 18:41:03
+28,6,Pulse #2 Rate,,2019-07-25 18:41:03
+28,7,Pulse #2 Instantaneous,,2019-07-25 18:41:03
+28,8,Pulse #2 Min,,2019-07-25 18:41:03
+28,9,Pulse #2 Max,,2019-07-25 18:41:03
+28,0,TRW Makeup Water,,2019-07-25 18:47:52
+28,1,TRW Makeup Water Rate,,2019-07-25 18:47:52
+28,2,TRW Makeup Water Instantaneous,,2019-07-25 18:47:52
+28,3,TRW Makeup Water Min,,2019-07-25 18:47:52
+28,4,TRW Makeup Water Max,,2019-07-25 18:47:52
+28,5,Pulse #2,,2019-07-25 18:47:52
+28,6,Pulse #2 Rate,,2019-07-25 18:47:52
+28,7,Pulse #2 Instantaneous,,2019-07-25 18:47:52
+28,8,Pulse #2 Min,,2019-07-25 18:47:52
+28,9,Pulse #2 Max,,2019-07-25 18:47:52
+28,0,TRW Makeup Water,3.0,2019-07-25 18:55:58
+28,1,TRW Makeup Water Rate,,2019-07-25 18:55:58
+28,2,TRW Makeup Water Instantaneous,,2019-07-25 18:55:58
+28,3,TRW Makeup Water Min,,2019-07-25 18:55:58
+28,4,TRW Makeup Water Max,,2019-07-25 18:55:58
+28,5,Pulse #2,1.0,2019-07-25 18:55:58
+28,6,Pulse #2 Rate,,2019-07-25 18:55:58
+28,7,Pulse #2 Instantaneous,,2019-07-25 18:55:58
+28,8,Pulse #2 Min,,2019-07-25 18:55:58
+28,9,Pulse #2 Max,,2019-07-25 18:55:58
+28,0,TRW Makeup Water,3.0,2019-07-25 19:02:46
+28,1,TRW Makeup Water Rate,0.0,2019-07-25 19:02:46
+28,2,TRW Makeup Water Instantaneous,0.0,2019-07-25 19:02:46
+28,3,TRW Makeup Water Min,0.0,2019-07-25 19:02:46
+28,4,TRW Makeup Water Max,0.0,2019-07-25 19:02:46
+28,5,Pulse #2,1.0,2019-07-25 19:02:46
+28,6,Pulse #2 Rate,0.0,2019-07-25 19:02:46
+28,7,Pulse #2 Instantaneous,0.0,2019-07-25 19:02:46
+28,8,Pulse #2 Min,0.0,2019-07-25 19:02:46
+28,9,Pulse #2 Max,0.0,2019-07-25 19:02:46
+28,0,TRW Makeup Water,3.0,2019-07-25 19:07:00
+28,1,TRW Makeup Water Rate,0.0,2019-07-25 19:07:00
+28,2,TRW Makeup Water Instantaneous,0.0,2019-07-25 19:07:00
+28,3,TRW Makeup Water Min,0.0,2019-07-25 19:07:00
+28,4,TRW Makeup Water Max,0.0,2019-07-25 19:07:00
+28,5,Pulse #2,1.0,2019-07-25 19:07:00
+28,6,Pulse #2 Rate,0.0,2019-07-25 19:07:00
+28,7,Pulse #2 Instantaneous,0.0,2019-07-25 19:07:00
+28,8,Pulse #2 Min,0.0,2019-07-25 19:07:00
+28,9,Pulse #2 Max,0.0,2019-07-25 19:07:00
+28,0,TRW Makeup Water,,2019-07-25 19:17:14
+28,1,TRW Makeup Water Rate,,2019-07-25 19:17:14
+28,2,TRW Makeup Water Instantaneous,,2019-07-25 19:17:14
+28,3,TRW Makeup Water Min,,2019-07-25 19:17:14
+28,4,TRW Makeup Water Max,,2019-07-25 19:17:14
+28,5,Pulse #2,,2019-07-25 19:17:14
+28,6,Pulse #2 Rate,,2019-07-25 19:17:14
+28,7,Pulse #2 Instantaneous,,2019-07-25 19:17:14
+28,8,Pulse #2 Min,,2019-07-25 19:17:14
+28,9,Pulse #2 Max,,2019-07-25 19:17:14
+28,0,TRW Makeup Water,,2019-07-25 19:28:18
+28,1,TRW Makeup Water Rate,,2019-07-25 19:28:18
+28,2,TRW Makeup Water Instantaneous,,2019-07-25 19:28:18
+28,3,TRW Makeup Water Min,,2019-07-25 19:28:18
+28,4,TRW Makeup Water Max,,2019-07-25 19:28:18
+28,5,Pulse #2,,2019-07-25 19:28:18
+28,6,Pulse #2 Rate,,2019-07-25 19:28:18
+28,7,Pulse #2 Instantaneous,,2019-07-25 19:28:18
+28,8,Pulse #2 Min,,2019-07-25 19:28:18
+28,9,Pulse #2 Max,,2019-07-25 19:28:18
+28,0,TRW Makeup Water,,2019-07-25 19:33:09
+28,1,TRW Makeup Water Rate,,2019-07-25 19:33:09
+28,2,TRW Makeup Water Instantaneous,,2019-07-25 19:33:09
+28,3,TRW Makeup Water Min,,2019-07-25 19:33:09
+28,4,TRW Makeup Water Max,,2019-07-25 19:33:09
+28,5,Pulse #2,,2019-07-25 19:33:09
+28,6,Pulse #2 Rate,,2019-07-25 19:33:09
+28,7,Pulse #2 Instantaneous,,2019-07-25 19:33:09
+28,8,Pulse #2 Min,,2019-07-25 19:33:09
+28,9,Pulse #2 Max,,2019-07-25 19:33:09
+28,0,TRW Makeup Water,,2019-07-25 19:38:24
+28,1,TRW Makeup Water Rate,,2019-07-25 19:38:24
+28,2,TRW Makeup Water Instantaneous,,2019-07-25 19:38:24
+28,3,TRW Makeup Water Min,,2019-07-25 19:38:24
+28,4,TRW Makeup Water Max,,2019-07-25 19:38:24
+28,5,Pulse #2,,2019-07-25 19:38:24
+28,6,Pulse #2 Rate,,2019-07-25 19:38:24
+28,7,Pulse #2 Instantaneous,,2019-07-25 19:38:24
+28,8,Pulse #2 Min,,2019-07-25 19:38:24
+28,9,Pulse #2 Max,,2019-07-25 19:38:24
+28,0,TRW Makeup Water,3.0,2019-07-25 19:41:54
+28,1,TRW Makeup Water Rate,,2019-07-25 19:41:54
+28,2,TRW Makeup Water Instantaneous,,2019-07-25 19:41:54
+28,3,TRW Makeup Water Min,,2019-07-25 19:41:54
+28,4,TRW Makeup Water Max,,2019-07-25 19:41:54
+28,5,Pulse #2,1.0,2019-07-25 19:41:54
+28,6,Pulse #2 Rate,,2019-07-25 19:41:54
+28,7,Pulse #2 Instantaneous,,2019-07-25 19:41:54
+28,8,Pulse #2 Min,,2019-07-25 19:41:54
+28,9,Pulse #2 Max,,2019-07-25 19:41:54
+28,0,TRW Makeup Water,,2019-07-25 19:48:32
+28,1,TRW Makeup Water Rate,,2019-07-25 19:48:32
+28,2,TRW Makeup Water Instantaneous,,2019-07-25 19:48:32
+28,3,TRW Makeup Water Min,,2019-07-25 19:48:32
+28,4,TRW Makeup Water Max,,2019-07-25 19:48:32
+28,5,Pulse #2,,2019-07-25 19:48:32
+28,6,Pulse #2 Rate,,2019-07-25 19:48:32
+28,7,Pulse #2 Instantaneous,,2019-07-25 19:48:32
+28,8,Pulse #2 Min,,2019-07-25 19:48:32
+28,9,Pulse #2 Max,,2019-07-25 19:48:32
+28,0,TRW Makeup Water,,2019-07-25 19:55:21
+28,1,TRW Makeup Water Rate,,2019-07-25 19:55:21
+28,2,TRW Makeup Water Instantaneous,,2019-07-25 19:55:21
+28,3,TRW Makeup Water Min,,2019-07-25 19:55:21
+28,4,TRW Makeup Water Max,,2019-07-25 19:55:21
+28,5,Pulse #2,,2019-07-25 19:55:21
+28,6,Pulse #2 Rate,,2019-07-25 19:55:21
+28,7,Pulse #2 Instantaneous,,2019-07-25 19:55:21
+28,8,Pulse #2 Min,,2019-07-25 19:55:21
+28,9,Pulse #2 Max,,2019-07-25 19:55:21
+28,0,TRW Makeup Water,,2019-07-25 20:02:02
+28,1,TRW Makeup Water Rate,,2019-07-25 20:02:02
+28,2,TRW Makeup Water Instantaneous,,2019-07-25 20:02:02
+28,3,TRW Makeup Water Min,,2019-07-25 20:02:02
+28,4,TRW Makeup Water Max,,2019-07-25 20:02:02
+28,5,Pulse #2,,2019-07-25 20:02:02
+28,6,Pulse #2 Rate,,2019-07-25 20:02:02
+28,7,Pulse #2 Instantaneous,,2019-07-25 20:02:02
+28,8,Pulse #2 Min,,2019-07-25 20:02:02
+28,9,Pulse #2 Max,,2019-07-25 20:02:02
+28,0,TRW Makeup Water,,2019-07-25 20:08:41
+28,1,TRW Makeup Water Rate,,2019-07-25 20:08:41
+28,2,TRW Makeup Water Instantaneous,,2019-07-25 20:08:41
+28,3,TRW Makeup Water Min,,2019-07-25 20:08:41
+28,4,TRW Makeup Water Max,,2019-07-25 20:08:41
+28,5,Pulse #2,,2019-07-25 20:08:41
+28,6,Pulse #2 Rate,,2019-07-25 20:08:41
+28,7,Pulse #2 Instantaneous,,2019-07-25 20:08:41
+28,8,Pulse #2 Min,,2019-07-25 20:08:41
+28,9,Pulse #2 Max,,2019-07-25 20:08:41
+28,0,TRW Makeup Water,,2019-07-25 20:17:40
+28,1,TRW Makeup Water Rate,,2019-07-25 20:17:40
+28,2,TRW Makeup Water Instantaneous,,2019-07-25 20:17:40
+28,3,TRW Makeup Water Min,,2019-07-25 20:17:40
+28,4,TRW Makeup Water Max,,2019-07-25 20:17:40
+28,5,Pulse #2,,2019-07-25 20:17:40
+28,6,Pulse #2 Rate,,2019-07-25 20:17:40
+28,7,Pulse #2 Instantaneous,,2019-07-25 20:17:40
+28,8,Pulse #2 Min,,2019-07-25 20:17:40
+28,9,Pulse #2 Max,,2019-07-25 20:17:40
+28,0,TRW Makeup Water,,2019-07-25 20:21:29
+28,1,TRW Makeup Water Rate,,2019-07-25 20:21:29
+28,2,TRW Makeup Water Instantaneous,,2019-07-25 20:21:29
+28,3,TRW Makeup Water Min,,2019-07-25 20:21:29
+28,4,TRW Makeup Water Max,,2019-07-25 20:21:29
+28,5,Pulse #2,,2019-07-25 20:21:29
+28,6,Pulse #2 Rate,,2019-07-25 20:21:29
+28,7,Pulse #2 Instantaneous,,2019-07-25 20:21:29
+28,8,Pulse #2 Min,,2019-07-25 20:21:29
+28,9,Pulse #2 Max,,2019-07-25 20:21:29
+28,0,TRW Makeup Water,,2019-07-25 20:27:47
+28,1,TRW Makeup Water Rate,,2019-07-25 20:27:47
+28,2,TRW Makeup Water Instantaneous,,2019-07-25 20:27:47
+28,3,TRW Makeup Water Min,,2019-07-25 20:27:47
+28,4,TRW Makeup Water Max,,2019-07-25 20:27:47
+28,5,Pulse #2,,2019-07-25 20:27:47
+28,6,Pulse #2 Rate,,2019-07-25 20:27:47
+28,7,Pulse #2 Instantaneous,,2019-07-25 20:27:47
+28,8,Pulse #2 Min,,2019-07-25 20:27:47
+28,9,Pulse #2 Max,,2019-07-25 20:27:47
+28,0,TRW Makeup Water,,2019-07-25 20:32:57
+28,1,TRW Makeup Water Rate,,2019-07-25 20:32:57
+28,2,TRW Makeup Water Instantaneous,,2019-07-25 20:32:57
+28,3,TRW Makeup Water Min,,2019-07-25 20:32:57
+28,4,TRW Makeup Water Max,,2019-07-25 20:32:57
+28,5,Pulse #2,,2019-07-25 20:32:57
+28,6,Pulse #2 Rate,,2019-07-25 20:32:57
+28,7,Pulse #2 Instantaneous,,2019-07-25 20:32:57
+28,8,Pulse #2 Min,,2019-07-25 20:32:57
+28,9,Pulse #2 Max,,2019-07-25 20:32:57
+28,0,TRW Makeup Water,,2019-07-25 20:42:06
+28,1,TRW Makeup Water Rate,,2019-07-25 20:42:06
+28,2,TRW Makeup Water Instantaneous,,2019-07-25 20:42:06
+28,3,TRW Makeup Water Min,,2019-07-25 20:42:06
+28,4,TRW Makeup Water Max,,2019-07-25 20:42:06
+28,5,Pulse #2,,2019-07-25 20:42:06
+28,6,Pulse #2 Rate,,2019-07-25 20:42:06
+28,7,Pulse #2 Instantaneous,,2019-07-25 20:42:06
+28,8,Pulse #2 Min,,2019-07-25 20:42:06
+28,9,Pulse #2 Max,,2019-07-25 20:42:06
+28,0,TRW Makeup Water,,2019-07-25 20:46:23
+28,1,TRW Makeup Water Rate,,2019-07-25 20:46:23
+28,2,TRW Makeup Water Instantaneous,,2019-07-25 20:46:23
+28,3,TRW Makeup Water Min,,2019-07-25 20:46:23
+28,4,TRW Makeup Water Max,,2019-07-25 20:46:23
+28,5,Pulse #2,,2019-07-25 20:46:23
+28,6,Pulse #2 Rate,,2019-07-25 20:46:23
+28,7,Pulse #2 Instantaneous,,2019-07-25 20:46:23
+28,8,Pulse #2 Min,,2019-07-25 20:46:23
+28,9,Pulse #2 Max,,2019-07-25 20:46:23
+28,0,TRW Makeup Water,3.0,2019-07-25 20:52:19
+28,1,TRW Makeup Water Rate,,2019-07-25 20:52:19
+28,2,TRW Makeup Water Instantaneous,,2019-07-25 20:52:19
+28,3,TRW Makeup Water Min,,2019-07-25 20:52:19
+28,4,TRW Makeup Water Max,,2019-07-25 20:52:19
+28,5,Pulse #2,1.0,2019-07-25 20:52:19
+28,6,Pulse #2 Rate,,2019-07-25 20:52:19
+28,7,Pulse #2 Instantaneous,,2019-07-25 20:52:19
+28,8,Pulse #2 Min,,2019-07-25 20:52:19
+28,9,Pulse #2 Max,,2019-07-25 20:52:19
+28,0,TRW Makeup Water,,2019-07-25 21:02:09
+28,1,TRW Makeup Water Rate,,2019-07-25 21:02:09
+28,2,TRW Makeup Water Instantaneous,,2019-07-25 21:02:09
+28,3,TRW Makeup Water Min,,2019-07-25 21:02:09
+28,4,TRW Makeup Water Max,,2019-07-25 21:02:09
+28,5,Pulse #2,,2019-07-25 21:02:09
+28,6,Pulse #2 Rate,,2019-07-25 21:02:09
+28,7,Pulse #2 Instantaneous,,2019-07-25 21:02:09
+28,8,Pulse #2 Min,,2019-07-25 21:02:09
+28,9,Pulse #2 Max,,2019-07-25 21:02:09
+28,0,TRW Makeup Water,,2019-07-25 21:07:26
+28,1,TRW Makeup Water Rate,,2019-07-25 21:07:26
+28,2,TRW Makeup Water Instantaneous,,2019-07-25 21:07:26
+28,3,TRW Makeup Water Min,,2019-07-25 21:07:26
+28,4,TRW Makeup Water Max,,2019-07-25 21:07:26
+28,5,Pulse #2,,2019-07-25 21:07:26
+28,6,Pulse #2 Rate,,2019-07-25 21:07:26
+28,7,Pulse #2 Instantaneous,,2019-07-25 21:07:26
+28,8,Pulse #2 Min,,2019-07-25 21:07:26
+28,9,Pulse #2 Max,,2019-07-25 21:07:26
+28,0,TRW Makeup Water,,2019-07-25 21:16:13
+28,1,TRW Makeup Water Rate,,2019-07-25 21:16:13
+28,2,TRW Makeup Water Instantaneous,,2019-07-25 21:16:13
+28,3,TRW Makeup Water Min,,2019-07-25 21:16:13
+28,4,TRW Makeup Water Max,,2019-07-25 21:16:13
+28,5,Pulse #2,,2019-07-25 21:16:13
+28,6,Pulse #2 Rate,,2019-07-25 21:16:13
+28,7,Pulse #2 Instantaneous,,2019-07-25 21:16:13
+28,8,Pulse #2 Min,,2019-07-25 21:16:13
+28,9,Pulse #2 Max,,2019-07-25 21:16:13
+28,0,TRW Makeup Water,,2019-07-25 21:22:10
+28,1,TRW Makeup Water Rate,,2019-07-25 21:22:10
+28,2,TRW Makeup Water Instantaneous,,2019-07-25 21:22:10
+28,3,TRW Makeup Water Min,,2019-07-25 21:22:10
+28,4,TRW Makeup Water Max,,2019-07-25 21:22:10
+28,5,Pulse #2,,2019-07-25 21:22:10
+28,6,Pulse #2 Rate,,2019-07-25 21:22:10
+28,7,Pulse #2 Instantaneous,,2019-07-25 21:22:10
+28,8,Pulse #2 Min,,2019-07-25 21:22:10
+28,9,Pulse #2 Max,,2019-07-25 21:22:10
+28,0,TRW Makeup Water,NULL,2019-07-25 21:28:15
+28,1,TRW Makeup Water Rate,NULL,2019-07-25 21:28:15
+28,2,TRW Makeup Water Instantaneous,NULL,2019-07-25 21:28:15
+28,3,TRW Makeup Water Min,NULL,2019-07-25 21:28:15
+28,4,TRW Makeup Water Max,NULL,2019-07-25 21:28:15
+28,5,Pulse #2,NULL,2019-07-25 21:28:15
+28,6,Pulse #2 Rate,NULL,2019-07-25 21:28:15
+28,7,Pulse #2 Instantaneous,NULL,2019-07-25 21:28:15
+28,8,Pulse #2 Min,NULL,2019-07-25 21:28:15
+28,9,Pulse #2 Max,NULL,2019-07-25 21:28:15
