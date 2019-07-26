@@ -14,10 +14,10 @@ The primary source file to run is webserver.py.
 It contains a Flask application that runs a webserver on localhost:8080, 
 which is where the AquiSuites will be pushing data to.
 
-### Miscellaneous Issues
+## Miscellaneous Issues
 This section is to help with identifying problamatic issues within the webserver system. 
 
-#### AcquiSuite PULL/PUSH Response
+### AcquiSuite PULL/PUSH Response
 The AcquiSuite will only delete backlogged files if it receives a properly formatted "SUCCESS" message.
 This is important, clearly, since the AcquiSuite can only store so much data and files need to eventually be deleted.
 There is an example within webserver.py which gives a correctly labeled XML-style format, but note that there are other 
