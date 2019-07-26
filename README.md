@@ -6,6 +6,9 @@ The goal of this project is to successfully acquire data from Obvius's Data Acqu
 We take the xml files pushed from the AcquiSuites, filter what we need, and output the data 
 to our proprietary database, SkySpark. 
 
+Note that there is an additional Jupyter Notebook that allows data visualization for time deltas in both barchart and histogram
+form. Please read comments for additional information. 
+
 ## Getting Started
 The primary source file to run is webserver.py.
 It contains a Flask application that runs a webserver on localhost:8080, 
