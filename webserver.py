@@ -29,77 +29,77 @@ def default():
     except:
         print('SUCCESS START UP')
 
+    #This section is important in response to the AcquiSuite response. This XML response is the only way to 
+    #properly respond to the AcquiSuite in which it will receive a "SUCCESS" indicator and delete backlogged files.
+    #This works by sending a properly formatted XML string with HTML style headers. The biggest issue was that 
+    #Content-Type is defaulted to text/html for the AcquiSuite, so that needed to be changed. 
     resp = make_response("<?xml version=\"1.0\"?>\n<DAS>\n<result>SUCCESS</result>\n</DAS>\n")
     resp.headers['Status'] = '200 OK'
     resp.headers['Pragma'] = 'no-cache'
     resp.headers['Content-Type'] = 'text/xml'
-    
-#     tree = ET.parse('xmlTest.xml')
-#     return get_data_xml(tree)
     return resp
 
+#TODO: Need to separate csv files by Point rather than Address
 def get_data_xml(xmlTree):
+    #Initialization of DataFrame
     gbl_tbl = pd.DataFrame(columns=["Address", "Point", "Name", "Value", "Time"])
+    
+    #Getting the root of the xmlTree and initializing address
     root = xmlTree.getroot()
     address = 0
     for d in root.iter('device'):
         address = d.find('address').text
 
-    #How this works: We changed the XML file to a tree, then iterate through the child nodes with "record" as its tag,
+    #How this works: We changed the XML file to a tree, then iterate through the child nodes with "record" as its tag
     for record in root.iter('record'):
+        #Get the time of the record entry
         time = record.find('time').text
-        for child in record:         
-            if "value" in child.attrib:                 
+        #Iterate through all points within the record
+        for child in record:
+            #This is mainly to get the points, we can alter to specify other info like error messages
+            if "value" in child.attrib:
+                #Create a DataFrame with line of data (which is really a row right now) to append to main DataFrame
                 tbl = pd.DataFrame(data=[[address, child.attrib['number'], 
                                           child.attrib['name'], child.attrib['value'],time]], 
                                    columns=["Address", "Point", "Name", "Value", "Time"])
+                #Appending to gbl_tbl
                 gbl_tbl = gbl_tbl.append(tbl, ignore_index=True)
-                #checking for duplicates
+                #Checking for duplicates within the file and removing them if found
                 if os.path.isfile('data/' + address + '_data.csv'):
                     existing = pd.read_csv('data/' + address + '_data.csv')
                     existing = existing.append(gbl_tbl)
                     existing = existing[~existing.duplicated()]
                     gbl_tbl = existing
+                    
+    #Converts the DataFrame into a csv file
     gbl_tbl.to_csv('data/' + address + '_data.csv', index=False)
-    return ''
+    return 'SUCCESS'
 
 @app.route('/get_data')
 #start and end are times, and must be in the format YEAR-MONTH-DAY (ex: 2019-06-17)
 #NOTE: the csv files are formated as ADDRESS_data.csv (ex: 250_data.csv)
 #NUANCES: start and end must have their hour and smaller units separated by "_" (ex: 2019-06-17_02:55:00)
 def get_data():
-#     address = request.args.get('address')
-#     pulses = request.args.get('pulses')
-#     start = request.args.get('start')
-#     end = request.args.get('end')
 
+    #Opens our config file, currently in yaml format
     with open("config.yaml", 'r') as stream:
         config = yaml.safe_load(stream)
-        
+    
+    #Assigns config values to variables
     address = config['address']
     points = config['points']
-    print(type(points))
-    for point in points:
-        print(point)
     start = config['start']
     end = config['end']
     
-    #NOTE: in order to bypass Flask list problems, this code takes points as a long string and splits it
-    #We also created a regex string to filter the table for our required points
-    #Please black box this section, some of the symbols are needed for regex
-#     pulses = pulses.split(",")
-#     regexed = "_" + pulses[0]
-#     for pulse in pulses:
-#         regexed += "|_" + pulse
-    
+    #Starts reading and sorting our table
     table = pd.read_csv("data/" + str(address) + "_data.csv")
     table = table[table['Point'].isin(points)]
-    
-    #NOTE: converting start and end to datetimes
-#     start = start.replace("_", " ")
-#     end = end.replace("_", " ")
+
+    #Changes user string input for start/end to datetime format
     start = datetime.strptime(start, '%Y-%m-%d %H:%M:%S')
     end = datetime.strptime(end, '%Y-%m-%d %H:%M:%S')
+    
+    #Applies datetime conversion to time column in DataFrame
     table["Time"] = table["Time"].apply(lambda x: datetime.strptime(x, '%Y-%m-%d %H:%M:%S'))
 
     #Filtering now by time
@@ -108,9 +108,9 @@ def get_data():
     #Dropping NaN values in Value column
     table = table.dropna(subset=['Value'])
     
-    print(table.to_csv(index=False))
-    #return table.to_csv(index=False)
+    #Currently returns an html table to the webserver, will eventually need to configure to SkySpark
     return table.to_html(header="true", table_id="table")
+
     #EXAMPLE URL: http://localhost:8080/get_data?address=250&pulses=1,2,3&start=2019-07-15_02:05:00&end=2019-07-15_02:15:00
 
 if __name__ == "__main__":
