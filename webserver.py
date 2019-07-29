@@ -1,5 +1,6 @@
 import os
-import xml.etree.ElementTree as ET 
+import xml.etree.ElementTree as ET
+from xml.etree.ElementTree import ElementTree
 import pandas as pd
 import numpy as np
 import yaml
@@ -41,6 +42,7 @@ def default():
 
 #TODO: Need to separate csv files by Point rather than Address
 def get_data_xml(xmlTree):
+    
     #Initialization of DataFrame
     gbl_tbl = pd.DataFrame(columns=["Address", "Point", "Name", "Value", "Time"])
     
@@ -73,13 +75,16 @@ def get_data_xml(xmlTree):
                     
     #Converts the DataFrame into a csv file
     gbl_tbl.to_csv('data/' + address + '_data.csv', index=False)
+    
+    #Code snippet for getting raw xml file examples
+    #xmlTree.write('raw_xml_data/' + address + "_raw.xml")
     return 'SUCCESS'
 
-@app.route('/get_data')
+@app.route('/get_data/<start>/')
 #start and end are times, and must be in the format YEAR-MONTH-DAY (ex: 2019-06-17)
 #NOTE: the csv files are formated as ADDRESS_data.csv (ex: 250_data.csv)
 #NUANCES: start and end must have their hour and smaller units separated by "_" (ex: 2019-06-17_02:55:00)
-def get_data():
+def get_data(start, end='N/A'):
 
     #Opens our config file, currently in yaml format
     with open("config.yaml", 'r') as stream:
@@ -88,30 +93,53 @@ def get_data():
     #Assigns config values to variables
     address = config['address']
     points = config['points']
-    start = config['start']
-    end = config['end']
+    custom = config['custom']
+    
+    #Mapping points to custom for table output
+    mapping = dict(zip(points, custom))
     
     #Starts reading and sorting our table
     table = pd.read_csv("data/" + str(address) + "_data.csv")
     table = table[table['Point'].isin(points)]
-
-    #Changes user string input for start/end to datetime format
-    start = datetime.strptime(start, '%Y-%m-%d %H:%M:%S')
-    end = datetime.strptime(end, '%Y-%m-%d %H:%M:%S')
     
     #Applies datetime conversion to time column in DataFrame
     table["Time"] = table["Time"].apply(lambda x: datetime.strptime(x, '%Y-%m-%d %H:%M:%S'))
+    
+    #Options for entering an end value or not
+    if end == 'N/A':
+        try:
+            start = start.replace("_", " ")
+            start = datetime.strptime(start, '%Y-%m-%d %H:%M:%S')
+            
+            #Filtering now by time
+            table = table[(table['Time'] >= start)]
+        except:
+            return "Wrong format! Look at comments in webserver.py for an example!"
+    else:
+        #Changes user string input for start/end to datetime format
+        #NOTE: remember the format for entering params! Look at comments above. This is because entering 
+        #flask params in a url doesn't take whitespace well, so it is replaced with "_".
+        try:
+            start = start.replace("_", " ")
+            end = end.replace("_", " ")
+            start = datetime.strptime(start, '%Y-%m-%d %H:%M:%S')
+            end = datetime.strptime(end, '%Y-%m-%d %H:%M:%S')
 
-    #Filtering now by time
-    table = table[(table['Time'] >= start) & (table['Time'] <= end)]
+            #Filtering now by time
+            table = table[(table['Time'] >= start) & (table['Time'] <= end)]
+        except:
+            return "Wrong format! Look at comments in webserver.py for an example!"
     
     #Dropping NaN values in Value column
     table = table.dropna(subset=['Value'])
     
+    #Applying mapping
+    table['Custom'] = table['Point'].map(mapping)
+    
     #Currently returns an html table to the webserver, will eventually need to configure to SkySpark
     return table.to_html(header="true", table_id="table")
 
-    #EXAMPLE URL: http://localhost:8080/get_data?address=250&pulses=1,2,3&start=2019-07-15_02:05:00&end=2019-07-15_02:15:00
+    #EXAMPLE URL: http://localhost:8080/get_data/2019-07-25_18:14:00/
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080)

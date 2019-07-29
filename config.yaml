@@ -4,6 +4,8 @@ points:
     - 1
     - 2
     - 3
-start: '2019-07-19 23:25:46'
-end: '2019-07-22 16:30:40'
-    
+custom:
+    - Custom One
+    - Custom Two
+    - Custom Three
+    - Custom Four
