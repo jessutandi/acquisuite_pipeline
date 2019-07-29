@@ -1,0 +1,27 @@
+/*
+  This function takes a point reference, 
+  extracts the modhopper device and point address,
+  and requests data from the acquisuite data collector.
+  It should then save that data (after checking validity) into 
+  the history for the point in question.
+  
+  Arguments: 
+  point             point with a modhopperDevAddr and modhopperPointAddr
+  start_date        dateTime for beginning of sliding window
+  end_date          dateTime for ending of sliding window
+  
+  // LBNL // JS // Last Update: 2019-07-29 //
+*/
+
+(point, start_date, end_date) => do
+
+  addr = point->modhopperDevAddr
+  pt = point->modhopperPointAddr
+  
+  # I just made this part up.... coordinate with actual get_data function methods
+  his = ioRead(... however you read http... http://fmcs-svc-mgr.lbl.gov/get_data?addr&pt&start_date&end_date )
+
+  # check data
+  
+  # write his
+end
