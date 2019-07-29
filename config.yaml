@@ -1,9 +1,20 @@
+# B50-2124B Intern Office
 address: 250
 points: 
-    - 0
-    - 1
-    - 2
-    - 3
+    - 0, 50A-2124B Wire1
+    - 4, 50A-2124B Wire2
+
+# B37 CT
+address: 22
+points:
+    - 0, 37-CT Makeup
+    - 4, 37-CT Blowdown
+    
+#B34 CT
+address: 28 
+    - 0, 34-CT Makeup
+    - 4, 34-CT Blowdown
+    
 start: '2019-07-19 23:25:46'
 end: '2019-07-22 16:30:40'
     
