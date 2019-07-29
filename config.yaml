@@ -2,7 +2,7 @@
 address: 250
 points: 
     - 0, 50A-2124B Wire1
-    - 4, 50A-2124B Wire2
+    - 12, 50A-2124B Wire2
 
 # B37 CT
 address: 22
