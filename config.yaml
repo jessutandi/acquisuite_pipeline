@@ -11,7 +11,22 @@ points:
     - 4, 37-CT Blowdown
 ---
 #B34 CT
-address: 28 
+address: 40
 points:
     - 0, 34-CT Makeup
-    - 4, 34-CT Blowdown
+    - 5, 34-CT Blowdown
+    
+#B50A Gas meter, East side
+address: 41
+points:
+    - 0, 50A-East-Gast
+    
+
+#50A Cooling towers
+address: 37
+points:
+    - 0, 50A-CT-Drain
+    - 1, 50A-CT-Drain_rate
+    - 5, 50A-CT-4-Makeup
+    - 10, 50A-CT-5-Makeup
+    
